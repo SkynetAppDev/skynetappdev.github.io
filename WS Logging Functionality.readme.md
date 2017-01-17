@@ -1,19 +1,20 @@
-Aim
+####Aim
  
 This document will explain the process of logging web service's request and response.
 
-Prerequisites
+####Prerequisites
  
 Need to create custom module named WS Logs (mng_Logs) using module builder.with following custom fields.
-●	ws_name (web service name)
-●	phone_number (user phone number who call the WS, if it was admin the value was admin).
-●	log_request (user request).
-●	log_response (sugar response).
-●	log_cooments (comments)
 
-How it works
+● ws_name (web service name)<br />
+● phone_number (user phone number who call the WS, if it was admin the value was admin).<br />
+● log_request (user request).<br />
+● log_response (sugar response).<br />
+● log_cooments (comments)<br />
+
+####How it works
  
-Step 1:
+####Step 1:
 
 We need to declare one global variable named $sugar_config['debug'] in Sugar config.php file to turn on and off the logging.
 
@@ -23,17 +24,17 @@ $sugar_config['debug']  => true, (i.e.  WS logging was enabled).
 
             $sugar_config['debug']  => false, (i.e. WS logging was disabled).
 
-Step 2:
+####Step 2:
 
  Once user run any soap request, all web service's requests will hit the soap.php file in Sugar Server.
 
-Step 3: 
+####vStep 3: 
 
 This soap.php file includes the nusoap.php file. 
 
 File location was include/nusoap/nusoap.php.
 
-Step 4: 
+####Step 4: 
 
 When requests hits soap.php file,it initiate the soap_server class in nusoap.php and calls the service function. Like the following.
 
@@ -43,7 +44,7 @@ $server = new soap_server;
 $server->configureWSDL('sugarsoap', $NAMESPACE, $sugar_config['site_url'].'/soap.php');
 $server->service ($HTTP_RAW_POST_DATA, $sugar_config['debug']);
 
-Step 5: 
+####Step 5: 
 
 The nusoap.php file will handle the requests, validating and send the response.
 
@@ -56,7 +57,7 @@ Example:
 $lyt_log_instance = new LYTLog();
 $lyt_log_instance->saveWSLog($this->methodname,$phone_number,$this->requestData,$this->formatXML($payload));
 
-Step 6:
+####Step 6:
 
  And the LYTLog class will save int to WS Logs module.
 
