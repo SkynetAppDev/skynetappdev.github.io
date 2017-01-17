@@ -1,0 +1,67 @@
+Aim
+ 
+This document will explain the process of logging web service's request and response.
+
+Prerequisites
+ 
+Need to create custom module named WS Logs(mng_Logs) using module builder.with following custom fields.
+ws_name (web service name)
+phone_number (user phone number who call the WS, if it was admin the value was admin).
+log_request (user request).
+log_response (sugar response).
+log_cooments (cooments)
+
+How it works
+ 
+Step 1: We need to declare one global variable named $sugar_config['debug'] in Suagr config.php file to turn on and off the logging.
+
+            example:
+
+$sugar_config['debug']  => true, (i.e  WS logging was enabled).
+
+            $sugar_config['debug']  => false, (i.e WS logging was disabled).
+
+Step 2: Once user run any soap request ,all web service's requests will hit the soap.php file in Sugar Server.
+
+Step 3: This soap.php file includes the nusoap.php file. 
+
+file location was include/nusoap/nusoap.php.
+
+Step 4: When requests hits soap.php file,it initiate the soap_server class in nusoap.php and calls the service function. like the following.
+
+	example:
+
+$server = new soap_server;
+$server->configureWSDL('sugarsoap', $NAMESPACE, $sugar_config['site_url'].'/soap.php');
+$server->service($HTTP_RAW_POST_DATA,$sugar_config['debug']);
+
+Step 5: The nusoap.php file will handle the requests, validating and send the response.
+
+Before sending the response we are logging the web services name ,phone number,request and response.
+
+In function send_response() in nusaop.php file ,we are initiating the LYTLog Class and passing webservice details.
+
+example:
+
+$lyt_log_instance = new LYTLog();
+$lyt_log_instance->saveWSLog($this->methodname,$phone_number,$this->requestData,$this->formatXML($payload));
+
+Step 6: And  the LYTLog class will save int to WS Logs module.
+
+LYTLog class file path : MangoLib/errorhandling/LYTLog.php.
+
+	example:
+
+            function saveWSLog($ws_name,$phone_number,$request,$response)
+	{
+	
+		$ws_log_obj = new mng_Logs();		
+		$ws_log_obj->name=$ws_name;
+		$ws_log_obj->ws_name=$ws_name;
+		$ws_log_obj->phone_number=$phone_number;
+		$ws_log_obj->log_request=$request;
+		$ws_log_obj->log_response=$response;
+		$ws_log_obj->save();
+		//print_r($ws_log_obj);exit;
+		
+	}.
