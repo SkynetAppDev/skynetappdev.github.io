@@ -4,7 +4,7 @@ This document will explain the process of logging web service's request and resp
 
 ####Prerequisites
  
-Need to create custom module named WS Logs (mng_Logs) using module builder.with following custom fields.
+Need to create custom module named WS Logs (mng_Logs) using module builder.with following custom fields. 
 
 ● ws_name (web service name)<br />
 ● phone_number (user phone number who call the WS, if it was admin the value was admin).<br />
@@ -28,7 +28,7 @@ $sugar_config['debug']  => true, (i.e.  WS logging was enabled).
 
  Once user run any soap request, all web service's requests will hit the soap.php file in Sugar Server.
 
-####vStep 3: 
+####Step 3: 
 
 This soap.php file includes the nusoap.php file. 
 
