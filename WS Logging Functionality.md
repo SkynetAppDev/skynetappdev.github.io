@@ -19,10 +19,15 @@ Need to create custom module named WS Logs (mng_Logs) using module builder.with 
 We need to declare one global variable named $sugar_config['debug'] in Sugar config.php file to turn on and off the logging.
 
 Example   
+**_Code:_**
+	
+```
     
-$sugar_config['debug']  => true, (i.e.  WS logging was enabled).
+         $sugar_config['debug']  => true, (i.e.  WS logging was enabled).
 
-            $sugar_config['debug']  => false, (i.e. WS logging was disabled).
+         $sugar_config['debug']  => false, (i.e. WS logging was disabled).
+	 
+```
 
 ####Step 2:
 
