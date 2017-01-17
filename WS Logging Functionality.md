@@ -18,8 +18,8 @@ Need to create custom module named WS Logs (mng_Logs) using module builder.with 
 
 We need to declare one global variable named $sugar_config['debug'] in Sugar config.php file to turn on and off the logging.
 
-            Example:
-
+Example   
+    
 $sugar_config['debug']  => true, (i.e.  WS logging was enabled).
 
             $sugar_config['debug']  => false, (i.e. WS logging was disabled).
@@ -38,11 +38,17 @@ File location was include/nusoap/nusoap.php.
 
 When requests hits soap.php file,it initiate the soap_server class in nusoap.php and calls the service function. Like the following.
 
-	Example:
+Example 	
+	
+**_Code:_**
+	
+```
 
 $server = new soap_server;
 $server->configureWSDL('sugarsoap', $NAMESPACE, $sugar_config['site_url'].'/soap.php');
 $server->service ($HTTP_RAW_POST_DATA, $sugar_config['debug']);
+
+```
 
 ####Step 5: 
 
@@ -54,8 +60,14 @@ In function send_response () in nusaop.php file, we are initiating the LYTLog Cl
 
 Example:
 
+**_Code:_**
+	
+```
+
 $lyt_log_instance = new LYTLog();
 $lyt_log_instance->saveWSLog($this->methodname,$phone_number,$this->requestData,$this->formatXML($payload));
+
+```
 
 ####Step 6:
 
@@ -63,8 +75,11 @@ $lyt_log_instance->saveWSLog($this->methodname,$phone_number,$this->requestData,
 
 LYTLog class file path: MangoLib/errorhandling/LYTLog.php.
 
-	Example:
+Example:
 
+**_Code:_**
+	
+```
             Function saveWSLog($ws_name,$phone_number,$request,$response)
 	{
 	
@@ -78,3 +93,6 @@ LYTLog class file path: MangoLib/errorhandling/LYTLog.php.
 		//print_r ($ws_log_obj); exit;
 		
 	}.
+
+```
+	
