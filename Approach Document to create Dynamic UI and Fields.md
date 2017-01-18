@@ -1,10 +1,10 @@
 ####Description:
 When a user login into iPad using his login credentials, a request (uisng SOAP or HTTP) is sent to web server.Depending upon the user type web server responses with few details mentioned below:
+* UI interface(Ex: Tab View, Split View, Modal View...) of the App.<br />
+* View(Ex: View, Table View....) of each page.<br />
+* Number of Fields in each page/tab.<br />
+* Accessibility of each field.<br />
 
-*UI interface(Ex: Tab View, Split View, Modal View...) of the App.<br />
-*View(Ex: View, Table View....) of each page.<br />
-*Number of Fields in each page/tab.<br />
-*Accessibility of each field.<br />
 ####Approach:
 Web server sends the type of UI and the number of items/pages in UI is send through XML. Need to parse the XML response and display UI interface and its related fields.<br />
 
