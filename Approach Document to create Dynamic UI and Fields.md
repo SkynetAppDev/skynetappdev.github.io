@@ -209,13 +209,19 @@ tab=[[UITabBarController alloc]init];
 ####Create Switch programmatically:
 **_Code:_**
 ```
+
 UISwitch *switchBtn;
     switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];
     BOOL status = [fieldsDict.value boolValue];
     [switchBtn setOn:status animated:YES];
     switchBtn.enabled = [fieldsDict.editable boolValue];
     [self.view addSubview:switchBtn];
+    
      ```
+     
+     
+  
+    
 
 
 
