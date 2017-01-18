@@ -75,6 +75,6 @@ $server->wsdl->addComplexType(
    		 'result_count'=>array('name'=>'result_count', 'type'=>'xsd:int'),
    		 'error' => array('name' =>'error', 'type'=>'tns:error_value'),
    	 )
-);
+)
 
 ```
