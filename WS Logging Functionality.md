@@ -1,5 +1,5 @@
-####Aim
- 
+####Description
+
 This document will explain the process of logging web service's request and response.
 
 ####Prerequisites
