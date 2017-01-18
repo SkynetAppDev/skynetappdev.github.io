@@ -151,59 +151,72 @@ In above XML,”id” in property will represents type of field and the remainin
 Using NSXML parser we will parse teh XML and store it in a mutable array. This array contains dictionary.<br />
 Note: We need to create all views or fields progmatically. We can't use Interface builder to create UI or fields.<br />
 ####Create Tab view programmatically:
+**_Code:_**
+```
+tab=[[UITabBarController alloc]init];
+ NSMutableArray *tabViewControl = [[NSMutableArray alloc]init];
+.
+.
+.
+[tabViewControl addObject:viewNav];
+[tab setViewControllers:tabViewControl];
+[self.view addSubview:tab.view];
 
-tab=[[UITabBarController alloc]init];<br />
- NSMutableArray *tabViewControl = [[NSMutableArray alloc]init];<br />
-.<br />
-.<br />
-.<br />
-[tabViewControl addObject:viewNav];<br />
-[tab setViewControllers:tabViewControl];<br />
-[self.view addSubview:tab.view];<br />
+```
 
 ####Create Text Field programmatically:
+**_Code:_**
+```
+ UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100) + 100, 150, 40)]autorelease];
+ llblMyLable.lineBreakMode = UILineBreakModeWordWrap;
+ llblMyLable.numberOfLines = 0;//Dynamic
+ llblMyLable.tag=1301;
+ llblMyLable.backgroundColor = [UIColor clearColor];
+ llblMyLable.text = fieldsDict.name;
+  [[self.view addSubview:lblMyLable];
+   					 
+   					 
+ UITextField * textFieldRounded = [[UITextField alloc] initWithFrame:CGRectMake(80 + k,(j * 100)+ 100, 150, 40)];
+  textFieldRounded.borderStyle = UITextBorderStyleRoundedRect;
+   textFieldRounded.textColor = [UIColor blackColor]; //text color
+   textFieldRounded.font = [UIFont systemFontOfSize:17.0];  //font size
+    //textFieldRounded.placeholder = @"<enter text>";  //place holder
+    textFieldRounded.text = fieldsDict.value;
+   								 textFieldRounded.userInteractionEnabled=NO;
+ textFieldRounded.backgroundColor = [UIColor greenColor]; //background color textFieldRounded.autocorrectionType = UITextAutocorrectionTypeNo;    // no auto correction support
+ textFieldRounded.keyboardType = UIKeyboardTypeDefault;  // type of the keyboard
+ textFieldRounded.returnKeyType = UIReturnKeyDone;  // type of the return key
+  textFieldRounded.clearButtonMode = UITextFieldViewModeWhileEditing;    // has a clear 'x' button to the right
 
-UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100) + 100, 150, 40)]autorelease];<br />
- llblMyLable.lineBreakMode = UILineBreakModeWordWrap;<br />
- llblMyLable.numberOfLines = 0;//Dynamic<br />
- llblMyLable.tag=1301;<br />
- llblMyLable.backgroundColor = [UIColor clearColor];<br />
- llblMyLable.text = fieldsDict.name;<br />
-  [[self.view addSubview:lblMyLable];<br />
-  
-  UITextField * textFieldRounded = [[UITextField alloc] initWithFrame:CGRectMake(80 + k,(j * 100)+ 100, 150, 40)];<br />
-  textFieldRounded.borderStyle = UITextBorderStyleRoundedRect;<br />
-   textFieldRounded.textColor = [UIColor blackColor]; //text color<br />
-   textFieldRounded.font = [UIFont systemFontOfSize:17.0];  //font size<br />
-    //textFieldRounded.placeholder = @"<enter text>";  //place holder<br />
-    textFieldRounded.text = fieldsDict.value;<br />
-     textFieldRounded.userInteractionEnabled=NO;<br />
- textFieldRounded.backgroundColor = [UIColor greenColor]; //background color textFieldRounded.autocorrectionType =<br /> UITextAutocorrectionTypeNo;    // no auto correction support<br />
- textFieldRounded.keyboardType = UIKeyboardTypeDefault;  // type of the keyboard<br />
- textFieldRounded.returnKeyType = UIReturnKeyDone;  // type of the return key<br />
-  textFieldRounded.clearButtonMode = UITextFieldViewModeWhileEditing;    // has a clear 'x' button to the right<br />
+  ```
   
 ####Create Button programmatically:
-  
-  UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];<br />
-   myButton.frame = CGRectMake((j *200) + 50, 750, 150, 40);<br />
-   [myButton setTitle:fieldsDict.value forState:UIControlStateNormal];<br />
-   [self.view addSubview:myButton];<br />
+**_Code:_**
+```
+  UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+   myButton.frame = CGRectMake((j *200) + 50, 750, 150, 40);
+   [myButton setTitle:fieldsDict.value forState:UIControlStateNormal];
+   [self.view addSubview:myButton];
    
-   UILabel *lblMyLable2 = [[[UILabel alloc] initWithFrame:CGRectMake(50,10, 130, 30)]autorelease];<br />
-    //lblMyLable2.lineBreakMode = UILineBreakModeWordWrap;<br />
-    lblMyLable2.backgroundColor = [UIColor clearColor];<br />
-   llblMyLable2.text = fieldsDict.name;<br />
-    [self.view addSubview:lblMyLable2];<br />
+   UILabel *lblMyLable2 = [[[UILabel alloc] initWithFrame:CGRectMake(50,10, 130, 30)]autorelease];
+    //lblMyLable2.lineBreakMode = UILineBreakModeWordWrap;
+    lblMyLable2.backgroundColor = [UIColor clearColor];
+   llblMyLable2.text = fieldsDict.name;
+    [self.view addSubview:lblMyLable2];
+    
+  ```
     
 ####Create Switch programmatically:
+**_Code:_**
+```
+UISwitch *switchBtn;
+    switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];
+    BOOL status = [fieldsDict.value boolValue];
+    [switchBtn setOn:status animated:YES];
+    switchBtn.enabled = [fieldsDict.editable boolValue];
+    [self.view addSubview:switchBtn];
 
-    UISwitch *switchBtn;<br />
-    switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];<br />
-    BOOL status = [fieldsDict.value boolValue];<br />
-    [switchBtn setOn:status animated:YES];<br />
-    switchBtn.enabled = [fieldsDict.editable boolValue];<br />
-    [self.view addSubview:switchBtn];<br />
+     ```
 
 
 
