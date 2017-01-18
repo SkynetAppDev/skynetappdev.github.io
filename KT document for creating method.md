@@ -1,11 +1,10 @@
 ###Description: 
 This document comprises total flow of creating a custom WebService method.
 ####To create a custom WebService method, there are three things to be done
-i.	Register a custom WebService method.<br />
-ii.	Define code of custom WebService method.<br />
-iii.	Define return fields of custom WebService method.<br />
+1.	Register a custom WebService method.<br />
+2.	Define code of custom WebService method.<br />
+3.	Define return fields of custom WebService method.<br />
 	
-####Below is the Step wise Process Flow of :
 
 ####Steps to register a custom WebService method:
 
