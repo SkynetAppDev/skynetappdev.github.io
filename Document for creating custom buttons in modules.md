@@ -16,7 +16,7 @@ array (
         )
   ```
   
-* To add a custom button, we need to add another array element with its key as custom Code as follows
+* To add a custom button, we need to add another array element with its key as customCode as follows
 
 **_Code:_**
 ```
