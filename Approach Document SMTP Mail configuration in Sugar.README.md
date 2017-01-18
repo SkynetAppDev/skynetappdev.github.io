@@ -50,13 +50,13 @@ For example, if you use the abcd server hosting your account, you have to provid
 
 ####Save the settings
  
-####Step 6: 
+####Step 1: 
 
 After you configure the settings for the outgoing email server, need to click on the Save button to save the changes.
  
 ####Test the outbound mail
  
-####Step 7:  
+####Step 1:  
 
 We can test whether everything is working correctly. Just click on the Send Test Email button. A window will pop out. Type the name of an email address that you want to use to receive the test message and click on Send:
 
