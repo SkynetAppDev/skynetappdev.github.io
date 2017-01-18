@@ -16,7 +16,7 @@ array (
         )
   ```
   
-* To add a custom button, we need to add another array element with its key as customCode as follows
+* To add a custom button, we need to add another array element with its key as custom Code as follows
 
 **_Code:_**
 ```
@@ -29,4 +29,4 @@ array (
   
 * The path of the entry point in above code should be defined in entry_point_registry.php file which is located in <root>\include\mvc\controller.<br />
 * Here the definition of entry point should be as:        PostTo'=>array('file'=>'MangoLib/custom/modules/Meetings/postMeeting.php','auth'=>true),<br />
-* In the php file (/postMeeting.php) of entrypoint the code to perform action on click of the button should be defined.<br />
+* In the php file (/postMeeting.php) of entry point the code to perform action on click of the button should be defined.<br />
