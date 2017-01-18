@@ -28,5 +28,5 @@ array (
   ```
   
 * The path of the entry point in above code should be defined in entry_point_registry.php file which is located in <root>\include\mvc\controller.<br />
-* Here the definition of entry point should be as:            'PostTo'=>array('file'=>'MangoLib/custom/modules/Meetings/postMeeting.php','auth'=>true),<br />  
+* Here the definition of entry point should be as:        PostTo'=>array('file'=>'MangoLib/custom/modules/Meetings/postMeeting.php','auth'=>true),<br />
 * In the php file (/postMeeting.php) of entrypoint the code to perform action on click of the button should be defined.<br />
