@@ -1,7 +1,7 @@
 ####1.Installing SVN
 
 1.1 Download and install the Tortoise-SVN from here http://nchc.dl.sourceforge.net/project/tortoisesvn/1.6.15/Application/TortoiseSVN-1.6.15.21042-win32-svn-1.6.16.msi.<br />
-1.2. In your localhost create a directory with desired name (e.g : portal).<br />
+1.2. In your local host create a directory with desired name (e.g : portal).<br />
 1.3. Now right click on the created folder and browse the following path on the context menu.<br />
 
 **_SVN Checkout:_**
