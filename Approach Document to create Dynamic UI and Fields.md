@@ -197,8 +197,8 @@ UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100
     [self.view addSubview:lblMyLable2];<br />
     
 ####Create Switch programmatically:
-    
-       UISwitch *switchBtn;<br />
+
+    UISwitch *switchBtn;<br />
     switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];<br />
     BOOL status = [fieldsDict.value boolValue];<br />
     [switchBtn setOn:status animated:YES];<br />
