@@ -20,7 +20,7 @@ To setup SSL on EC2 Environment.
 command : openssl req -new -key indusmdemr.com.key -out indusmdemr.com.csr<br />
 
 ####Step 4:
-* View the generated CSR and copy. Paste it later to your GoDaddy SSL Certificate Management Tool
+* View the generated CSR and copy. Paste it later to your GoDaddy SSL Certificate Management Tool.
 
 ####Step 5:
 * Install your certificate gd_bundle.crt and indusmdemr.com.crt to your server. Upload them to the server and  execute the following <br />
