@@ -9,6 +9,7 @@ When a user login into iPad using his login credentials, a request (uisng SOAP o
 Web server sends the type of UI and the number of items/pages in UI is send through XML. Need to parse the XML response and display UI interface and its related fields.<br />
 
 **_Code:_**
+
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
 <MangoUserDataFile>
@@ -36,6 +37,7 @@ In the above XML, the attribute “tab” represents the Tab and “id” repres
 When a particular page/Tab is clicked then a new request is sent to web server and the response will contains the number of fields and its accessibility. 
 
 **_Code:_**
+
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
 <MangoUserDataFile>
@@ -152,6 +154,7 @@ Using NSXML parser we will parse teh XML and store it in a mutable array. This a
 Note: We need to create all views or fields progmatically. We can't use Interface builder to create UI or fields.<br />
 ####Create Tab view programmatically:
 **_Code:_**
+
 ```
 tab=[[UITabBarController alloc]init];
  NSMutableArray *tabViewControl = [[NSMutableArray alloc]init];
@@ -166,6 +169,7 @@ tab=[[UITabBarController alloc]init];
 
 ####Create Text Field programmatically:
 **_Code:_**
+
 ```
  UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100) + 100, 150, 40)]autorelease];
  llblMyLable.lineBreakMode = UILineBreakModeWordWrap;
@@ -192,6 +196,7 @@ tab=[[UITabBarController alloc]init];
   
 ####Create Button programmatically:
 **_Code:_**
+
 ```
   UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
    myButton.frame = CGRectMake((j *200) + 50, 750, 150, 40);
@@ -208,6 +213,7 @@ tab=[[UITabBarController alloc]init];
     
 ####Create Switch programmatically:
 **_Code:_**
+
 ```
 UISwitch *switchBtn;
     switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];
@@ -217,6 +223,12 @@ UISwitch *switchBtn;
     [self.view addSubview:switchBtn];
     
      ```
+    
+    
+
+
+    
+    
      
      
   
