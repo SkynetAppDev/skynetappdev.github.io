@@ -10,6 +10,8 @@ This document comprises total flow of creating a custom WebService method.
 * Every WS method should be registered before its code is defined. The registration is defining a register array that has WS method name, its input parameters’ name and type array and its return value.
 * The below given is a register array of a custom WS method named look_up_value.
 
+**_Code:_**
+
 ```
 $server->register(
      	'look_up_value',
@@ -26,6 +28,8 @@ $server->register(
 * Custom WS method should be defined along with default WS methods defined in <root>/soap/SoapSugarUsers.php file
 * Defining a custom WS method is like defining any other method that implements a logic and returns an array of values as per the requirement.
 * Following is code defined in look_up_value method that returns count of number of times a user input value exists in given module in a given field
+
+**_Code:_**
 
 ```
 function look_up_value($session, $module_name, $field, $value){
@@ -57,6 +61,8 @@ function look_up_value($session, $module_name, $field, $value){
 
 * Return type of any custom WS method should be defined in <root>/soap/SoapTypes.php
 * Complex type that is returned by a custom WS method should be defined as follows:
+
+**_Code:_**
 
 ```
 $server->wsdl->addComplexType(
