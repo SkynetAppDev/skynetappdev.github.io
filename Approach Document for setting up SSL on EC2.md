@@ -43,7 +43,7 @@ command : /etc/init.d/apache2 restart
 
 
 ####Step 8:
-*Create an htaccess file and upload to your root www folder<br />
+* Create an htaccess file and upload to your root www folder<br />
 RewriteEngine On<br />
 RewriteCond %{SERVER_PORT} 80<br />
 RewriteRule ^(.*)$ https://www.indusmdemr.com/$1 [R,L]<br />
