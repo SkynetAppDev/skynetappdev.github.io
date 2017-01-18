@@ -1,4 +1,4 @@
-##Description: 
+####Description: 
 This document comprises total flow of creating a custom WebService method.
 
 
@@ -10,7 +10,7 @@ ii.	Define code of custom WebService method
 
 iii.	Define return fields of custom WebService method
 
-###Below is the Step wise Process Flow of :
+####Below is the Step wise Process Flow of :
 
 ####Steps to register a custom WebService method:
 
@@ -32,15 +32,14 @@ The registration is defining a register array that has WS method name, its input
 
 ####Steps to define code of custom WebService method:
 
-⦁	Custom WS method should be defined along with default WS methods defined in <root>/soap/SoapSugarUsers.php file.
+⦁	Custom WS method should be defined along with default WS methods defined in <root>/soap/SoapSugarUsers.php file.<br />
+⦁	Defining a custom WS method is like defining any other method that implements a logic and returns an array of values as per the requirement.<br />
+⦁	Following is code defined in look_up_value method that returns count of number of times a user input value exists in given module in a given field<br />
 
-⦁	Defining a custom WS method is like defining any other method that implements a logic and returns an array of values as per the requirement.
 
-⦁	Following is code defined in look_up_value method that returns count of number of times a user input value exists in given module in a given field
-
-function look_up_value($session, $module_name, $field, $value)
 
 ```
+  
   {
 	global  $beanList, $beanFiles;
    	 $error = new SoapError();
@@ -71,8 +70,7 @@ function look_up_value($session, $module_name, $field, $value)
 ```
 ####Steps to define return type of custom WebService method:
 
-⦁	Return type of any custom WS method should be defined in <root>/soap/SoapTypes.php.
-
+⦁	Return type of any custom WS method should be defined in <root>/soap/SoapTypes.php.<br />
 ⦁	Complex type that is returned by a custom WS method should be defined as follows:
 
 
@@ -96,4 +94,4 @@ $server->wsdl->addComplexType(
      
      );
      
-     ```
+```
