@@ -4,13 +4,13 @@ This document will explain the process of logging web service's request and resp
 
 ####Prerequisites
  
-Need to create custom module named WS Logs (mng_Logs) using module builder.with following custom fields. 
+Need to create custom module named WS Logs (mng_Logs) using module builder with following custom fields. 
 
 ● ws_name (web service name)<br />
 ● phone_number (user phone number who call the WS, if it was admin the value was admin).<br />
 ● log_request (user request).<br />
 ● log_response (sugar response).<br />
-● log_cooments (comments)<br />
+● log_coments (comments)<br />
 
 ####How it works
  
@@ -23,9 +23,9 @@ Example
 	
 ```
     
-         $sugar_config['debug']  => true, (i.e.  WS logging was enabled).
+         $sugar_config['debug']  => true, i.e.  WS logging was enabled.
 
-         $sugar_config['debug']  => false, (i.e. WS logging was disabled).
+         $sugar_config['debug']  => false, i.e. WS logging was disabled.
 	 
 ```
 
@@ -35,9 +35,8 @@ Example
 
 ####Step 3: 
 
-This soap.php file includes the nusoap.php file. 
-
-File location was include/nusoap/nusoap.php.
+This soap.php file includes the nusoap.php file.<br />
+File location was include/nusoap/nusoap.php.<br />
 
 ####Step 4: 
 
@@ -57,11 +56,9 @@ $server->service ($HTTP_RAW_POST_DATA, $sugar_config['debug']);
 
 ####Step 5: 
 
-The nusoap.php file will handle the requests, validating and send the response.
-
-Before sending the response we are logging the web services name, phone number, request and response.
-
-In function send_response () in nusaop.php file, we are initiating the LYTLog Class and passing webservice details.
+The nusoap.php file will handle the requests, validating and send the response.<br />
+Before sending the response we are logging the web services name, phone number, request and response.<br />
+In function send_response () in nusaop.php file, we are initiating the LYTLog Class and passing webservice details.<br />
 
 Example:
 
@@ -76,9 +73,8 @@ $lyt_log_instance->saveWSLog($this->methodname,$phone_number,$this->requestData,
 
 ####Step 6:
 
- And the LYTLog class will save int to WS Logs module.
-
-LYTLog class file path: MangoLib/errorhandling/LYTLog.php.
+And the LYTLog class will save int to WS Logs module.<br />
+LYTLog class file path: MangoLib/errorhandling/LYTLog.php.<br />
 
 Example:
 
@@ -86,7 +82,7 @@ Example:
 	
 ```
             Function saveWSLog($ws_name,$phone_number,$request,$response)
-	{
+	    {
 	
 		$ws_log_obj = new mng_Logs();		
 		$ws_log_obj->name=$ws_name;
@@ -97,7 +93,7 @@ Example:
 		$ws_log_obj->save ();
 		//print_r ($ws_log_obj); exit;
 		
-	}.
+	   }
 
 ```
 	
