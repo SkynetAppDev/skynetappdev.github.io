@@ -7,7 +7,6 @@ This document comprises total flow of creating a custom WebService method.
 	
 
 ####Steps to register a custom WebService method:
-
 * Every WS method should be registered before its code is defined. The registration is defining a register array that has WS method name, its input parameters’ name and type array and its return value.
 * The below given is a register array of a custom WS method named look_up_value.
 
@@ -20,7 +19,6 @@ $server->register(
 	$NAMESPACE);
   
   ```
-
 * Above register array should be defined just above the definition of 'look_up_value' method at location <root>/soap/SoapSugarUsers.php file.
 
 ####Steps to define code of custom WebService method:
