@@ -81,7 +81,7 @@ Example:
 **_Code:_**
 	
 ```
-            Function saveWSLog($ws_name,$phone_number,$request,$response)
+         Function saveWSLog($ws_name,$phone_number,$request,$response)
 	    {
 	
 		$ws_log_obj = new mng_Logs();		
