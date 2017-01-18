@@ -7,8 +7,8 @@ This document comprises total flow of creating a custom WebService method.
 	
 
 ####Steps to register a custom WebService method:
-* Every WS method should be registered before its code is defined. The registration is defining a register array that has WS method name, its input parameters’ name and type array and its return value.
-* The below given is a register array of a custom WS method named look_up_value.
+* Every WS method should be registered before its code is defined. The registration is defining a register array that has WS method name, its input parameters’ name and type array and its return value.<br />
+* The below given is a register array of a custom WS method named look_up_value.<br />
 
 **_Code:_**
 
@@ -25,9 +25,9 @@ $server->register(
 
 ####Steps to define code of custom WebService method:
 
-* Custom WS method should be defined along with default WS methods defined in <root>/soap/SoapSugarUsers.php file
-* Defining a custom WS method is like defining any other method that implements a logic and returns an array of values as per the requirement.
-* Following is code defined in look_up_value method that returns count of number of times a user input value exists in given module in a given field
+* Custom WS method should be defined along with default WS methods defined in <root>/soap/SoapSugarUsers.php file.<br />
+* Defining a custom WS method is like defining any other method that implements a logic and returns an array of values as per the requirement.<br />
+* Following is code defined in look_up_value method that returns count of number of times a user input value exists in given module in a given field.<br />
 
 **_Code:_**
 
@@ -59,7 +59,7 @@ function look_up_value($session, $module_name, $field, $value){
 
 ####Steps to define return type of custom WebService method:
 
-* Return type of any custom WS method should be defined in <root>/soap/SoapTypes.php
+* Return type of any custom WS method should be defined in <root>/soap/SoapTypes.php.<br />
 * Complex type that is returned by a custom WS method should be defined as follows:
 
 **_Code:_**
