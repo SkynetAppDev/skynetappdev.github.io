@@ -215,7 +215,6 @@ UISwitch *switchBtn;
     [switchBtn setOn:status animated:YES];
     switchBtn.enabled = [fieldsDict.editable boolValue];
     [self.view addSubview:switchBtn];
-
      ```
 
 
