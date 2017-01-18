@@ -183,7 +183,7 @@ UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100
  textFieldRounded.returnKeyType = UIReturnKeyDone;  // type of the return key<br />
   textFieldRounded.clearButtonMode = UITextFieldViewModeWhileEditing;    // has a clear 'x' button to the right<br />
   
-  ####Create Button programmatically:
+####Create Button programmatically:
   
   UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];<br />
    myButton.frame = CGRectMake((j *200) + 50, 750, 150, 40);<br />
@@ -196,7 +196,7 @@ UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100
    llblMyLable2.text = fieldsDict.name;<br />
     [self.view addSubview:lblMyLable2];<br />
     
-    ####Create Switch programmatically:
+####Create Switch programmatically:
     
        UISwitch *switchBtn;<br />
     switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];<br />
