@@ -37,7 +37,7 @@ Now I am using following credentials to setup configuration.<br />
 
 ####Step 4:
 
-By default, the other button is selected. You can use it to configure the settings for any outgoing email server. For example, you can use the Host Knox server hosting your account. As a matter of fact, you can also use this button to set up the outgoing mail configuration of your Gmail or Yahoo email account. The Other button displays some additional options compared to the Gmail and Yahoo buttons:
+By default, the other button is selected. You can use it to configure the settings for any outgoing email server. For example, you can use the Host Knox server hosting your account. As a matter of fact, you can also use this button to set up the outgoing mail configuration of your Gmail or Yahoo email account. The other button displays some additional options compared to the Gmail and Yahoo buttons:
 
 
 ![4](https://cloud.githubusercontent.com/assets/17013436/22037078/df7a03ee-dd1b-11e6-8289-9dd5dff43c78.PNG)
