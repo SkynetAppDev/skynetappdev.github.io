@@ -7,9 +7,11 @@ To setup SSL on EC2 Environment.
 ####Step 2:
 * Create the server SSL Key
  command: sudo bash<br />
+ 
 **Note 1**: On Ubuntu this changes you to the root user as you cannot access the directory on the next step.<br />
  command: cd /etc/ssl/private<br />
             command: openssl genrsa -des3 -out indusmdemr.com.key 2048<br />
+            
  **Note 2**: Make sure its 2048 and not 1024 bit as this would be required later on GoDaddy.<br />
   Enter keyphrase {in terminal you need to enter a keyphrase, it is a temporary passcode}<br />
   
@@ -39,7 +41,7 @@ SSLCertificateChainFile /etc/ssl/gd_bundle.crt<br />
 * Make sure Apache2 to listen on port 443, edit the /etc/apache2/ports.conf  and restart Apache
 command : /etc/init.d/apache2 restart
 
- **Note 3**: If all went well you should be able to access https. For EC2 make sure Port 443 is enabled as well on the AWS Console
+**Note 3**: If all went well you should be able to access https. For EC2 make sure Port 443 is enabled as well on the AWS Console
 
 
 ####Step 8:
