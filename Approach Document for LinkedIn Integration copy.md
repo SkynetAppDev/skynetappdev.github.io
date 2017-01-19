@@ -82,10 +82,11 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 * First if we click on ‘LinkedIn’ it will navigates to one page where we can able to see one ‘Login LinkedIn’ with a switch.<br />
 * On selecting that switch we will be navigate to LinkedIn Login web page.<br />
 * On successful login it will give us options of all the groups including ‘Post to wall’ like,<br />
-     ○	Post to LinkedIn wall<br />
-     ○	Group 1<br />
-     ○	Group 2<br />
-     ○	Group 3...etc<br />
+
+          ○	Post to LinkedIn wall
+          ○	Group 1
+          ○	Group 2
+          ○	Group 3...etc    
 * We can select one /many from the list.<br />
 * If we select ‘Post to LinkedIn wall’ and all groups, the job will post on user’s wall as well as on selected groups.<br />
 * We select options and click on done, it will redirect the page to add job page with selected options.<br />
@@ -314,9 +315,7 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 ####Conclusion:
 The job will post on wall as well as on selected groups. Alerts will show according to app flow like in adding job/editing job.
 
-          ○	require_once("MangoLib/smsLib/NexmoResponseArray.php");
-          ○	require_once("MangoLib/smsLib/NexmoMessage.php");
-          ○	require_once("MangoLib/smsLib/MvaayooMessage.php");
+  
 
 
 
