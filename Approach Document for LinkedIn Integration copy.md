@@ -82,8 +82,7 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 * First if we click on ‘LinkedIn’ it will navigates to one page where we can able to see one ‘Login LinkedIn’ with a switch.<br />
 * On selecting that switch we will be navigate to LinkedIn Login web page.<br />
 * On successful login it will give us options of all the groups including ‘Post to wall’ like,<br />
-
-     ○	Post to LinkedIn wall<br />       
+     ○	Post to LinkedIn wall<br />
      ○	Group 1<br />
      ○	Group 2<br />
      ○	Group 3...etc<br />
