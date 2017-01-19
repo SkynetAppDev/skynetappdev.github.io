@@ -98,16 +98,16 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 Code Flow of LinkedIn:<br />
 We need following urls to login/to post on wall/to post on groups/to fetch groups,<br />
 
-####To post the job on wall.
+####To post the job on wall:
         LinkedIn Wall Post Url = @"http://api.linkedin.com/v1/people/~/shares";
 	
-####To Fetch user groups of LinkedIn.
+####To Fetch user groups of LinkedIn:
         LinkedIn Groups Url = @"https://api.linkedin.com/v1/people/~/group-memberships:(group:(id,name))?count=100&start=0";
 	
-####To post job on groups of LinkedIn.
+####To post job on groups of LinkedIn:
         LinkedIn Groups PosrUrl = @"https://api.linkedin.com/v1/groups/@id@/posts";
 	
-####To post the job with any reference image.
+####To post the job with any reference image:
         LinkedIn Image = @"https://www.lytepole.com/web/prod/images/linkedinimage.png";
 * First to login to linkedIn we are navigating to ‘OAuthLoginView’ controller. It is with in the LinkedIn api. It will redirect to web page to login with our credentials.<br />
 * If successful login following method will call to pick user groups.<br />
