@@ -317,7 +317,7 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 ```
 
 ####Conclusion:
-The job will post on wall as well as on selected groups. Alerts will show according to app flow like in adding job/editing job.
+The job will post on wall as well as on selected groups. Alerts will show according to App flow like in adding job/editing job.
 
   
 
