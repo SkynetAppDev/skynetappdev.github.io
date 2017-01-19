@@ -16,22 +16,22 @@ Enter all details of company, names etc.
 Agree the form to submit and it will generate your keys and gives a message like ‘Your application was successfully created’ and gives all keys like following.
 ####Application Details
 
-**_Company_**:
+**_Company:_**:
 SkyNet Research and Development PVT Ltd.
 
-**_Application Name_**:
+**_Application Name:_**:
  Lytepole
 
-**_API Key_**:
+**_API Key:_**:
  78jkhika60207n
 
-**_Secret Key_**:
+**_Secret Key:_**:
  TA6fkc7kCCNPNakU
 
-**_OAuth User Token_**:
+**_OAuth User Token:_**:
 2a261291-8b1b-4624-977a-93b33383c2c9
 
-**_OAuth User Secret_**:
+**_OAuth User Secret:_**:
 b473fb71-1462-436c-a1e4-6e9d919da6ce
 
 Now we have secret and api keys for our application, so we can proceed  to integrate the LinkedIn api in our app.
@@ -112,7 +112,7 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 * First to login to linkedIn we are navigating to ‘OAuthLoginView’ controller. It is with in the LinkedIn api. It will redirect to web page to login with our credentials.<br />
 * If successful login following method will call to pick user groups.<br />
 
-**_Code_**
+**_Code:_**
 
 ```
 -(void)getLinkedInGroups
@@ -138,9 +138,9 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 * Now we have user groups with us. Show all the groups list with Post on wall option in list view to select where to post the job.<br />
 *  If user selects the ‘Post on wall’ and some groups and save button clicked the job will post on Linked in wall as well as in groups. The following is code flow.<br />
 
-####pragma mark - Posting LinkedIn Wall
+####pragma mark - Posting LinkedIn Wall:
 
-**_Code_**
+**_Code:_**
 
 ```
 - (void)buttonPostStatusClick
@@ -159,7 +159,7 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 ```
 
 ####Creating job post format:
-**_Code_**
+**_Code:_**
 
 ```
 NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
@@ -192,8 +192,8 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 
 ```
 
-####Delegate of Post on wall did finish
-**_Code_**
+####Delegate of Post on wall did finish:
+**_Code:_**
 
 ```
 - (void)postUpdateApiCallResult:(OAServiceTicket *)ticket didFinish:(NSData *)data
@@ -221,8 +221,8 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 }
 
 ```
-####Delegate of Post on wall did Fail
-**_Code_**
+####Delegate of Post on wall did Fail:
+**_Code:_**
 
 ```
 - (void)postUpdateApiCallResult:(OAServiceTicket *)ticket didFail:(NSData *)data
@@ -233,8 +233,8 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 
 ```
 
-####pragma mark - Posting LinkedIn Groups
-**_Code_**
+####pragma mark - Posting LinkedIn Groups:
+**_Code:_**
 
 ```
 - (void)postJobOnGroup :(NSString *)groupId
@@ -259,8 +259,8 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 
 ```
 
-####Creating Job post format
-**_Code_**
+####Creating Job post format:
+**_Code:_**
 
 ```
 NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
@@ -290,8 +290,8 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 
 ```
 
-####Delegate of Post in groups did Finish
-**_Code_**
+####Delegate of Post in groups did Finish:
+**_Code:_**
 
 ```
 - (void)postToLinkedInGroupsApiResponse:(OAServiceTicket *)ticket didFinish:(NSData *)data
@@ -302,8 +302,8 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 	
 ```
 
-####Delegate of Post in groups did Fail
-**_Code_**
+####Delegate of Post in groups did Fail:
+**_Code:_**
 
 ```
 {
