@@ -297,7 +297,6 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 - (void)postToLinkedInGroupsApiResponse:(OAServiceTicket *)ticket didFinish:(NSData *)data
 {
 //    NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-
 }
 	
 ```
