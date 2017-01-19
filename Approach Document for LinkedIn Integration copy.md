@@ -82,7 +82,29 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 * First if we click on ‘LinkedIn’ it will navigates to one page where we can able to see one ‘Login LinkedIn’ with a switch.<br />
 * On selecting that switch we will be navigate to LinkedIn Login web page.<br />
 * On successful login it will give us options of all the groups including ‘Post to wall’ like,<br />
-..* 
+ ○ Post to LinkedIn wall<br />
+ ○ Group1<br />
+ ○ Group 2<br />
+ ○ Group 3 …. etc<br />
+* We can select one /many from the list.<br />
+* If we select ‘Post to LinkedIn wall’ and all groups, the job will post on user’s wall as well as on selected groups.<br />
+* We select options and click on done, it will redirect the page to add job page with selected options.<br />
+* After entering all the other details of job and click on next, it will show all the selected details in summary page.<br />
+* When click on save it will show all the options along with LinkedIn.<br />
+* The job will save to EMR as well as posted on LinkedIn page.<br />
+
+####Step 5: 
+Code Flow of LinkedIn:<br />
+We need following urls to login/to post on wall/to post on groups/to fetch groups,<br />
+
+####//To post the job on wall
+        LinkedIn Wall Post Url = @"http://api.linkedin.com/v1/people/~/shares";
+	
+####//To Fetch user groups of LinkedIn
+        LinkedIn Groups Url = @"https://api.linkedin.com/v1/people/~/group-memberships:(group:(id,name))?count=100&start=0";
+
+
+
 
 
 
