@@ -14,7 +14,7 @@ Click on add new application, It will open a page like, Adding new application.
 Enter all details of company, names etc.
 ####Step 6:
 Agree the form to submit and it will generate your keys and gives a message like ‘Your application was successfully created’ and gives all keys like following.
-####Application Details
+####Application Details:
 
 **_Company_**:
 SkyNet Research and Development PVT Ltd.
@@ -98,16 +98,16 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 Code Flow of LinkedIn:<br />
 We need following urls to login/to post on wall/to post on groups/to fetch groups,<br />
 
-####To post the job on wall:
+####//To post the job on wall
         LinkedIn Wall Post Url = @"http://api.linkedin.com/v1/people/~/shares";
 	
-####To Fetch user groups of LinkedIn:
+####//To Fetch user groups of LinkedIn
         LinkedIn Groups Url = @"https://api.linkedin.com/v1/people/~/group-memberships:(group:(id,name))?count=100&start=0";
 	
-####To post job on groups of LinkedIn:
+####//To post job on groups of LinkedIn
         LinkedIn Groups PosrUrl = @"https://api.linkedin.com/v1/groups/@id@/posts";
 	
-####To post the job with any reference image:
+####//To post the job with any reference image
         LinkedIn Image = @"https://www.lytepole.com/web/prod/images/linkedinimage.png";
 * First to login to linkedIn we are navigating to ‘OAuthLoginView’ controller. It is with in the LinkedIn api. It will redirect to web page to login with our credentials.<br />
 * If successful login following method will call to pick user groups.<br />
@@ -138,7 +138,9 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 * Now we have user groups with us. Show all the groups list with Post on wall option in list view to select where to post the job.<br />
 *  If user selects the ‘Post on wall’ and some groups and save button clicked the job will post on Linked in wall as well as in groups. The following is code flow.<br />
 
-#### #pragma mark - Posting LinkedIn Wall:
+#### #pragma mark - Posting LinkedIn Wall
+//Method to post on LinkedIn wall
+
 
 **_Code:_**
 
@@ -158,7 +160,7 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 
 ```
 
-####Creating job post format:
+####//Creating job post format
 **_Code:_**
 
 ```
@@ -192,7 +194,7 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 
 ```
 
-####Delegate of Post on wall did finish:
+####//Delegate of Post on wall did finish
 **_Code:_**
 
 ```
@@ -221,7 +223,7 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 }
 
 ```
-####Delegate of Post on wall did Fail:
+####//Delegate of Post on wall did Fail
 **_Code:_**
 
 ```
@@ -233,7 +235,9 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 
 ```
 
-#### #pragma mark - Posting LinkedIn Groups:
+#### #pragma mark - Posting LinkedIn Groups
+//Method to post in Groups
+
 **_Code:_**
 
 ```
@@ -259,7 +263,7 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 
 ```
 
-####Creating Job post format:
+####//Creating Job post format
 **_Code:_**
 
 ```
@@ -290,7 +294,7 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 
 ```
 
-####Delegate of Post in groups did Finish:
+####//Delegate of Post in groups did Finish
 **_Code:_**
 
 ```
@@ -301,7 +305,7 @@ NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
 	
 ```
 
-####Delegate of Post in groups did Fail:
+####//Delegate of Post in groups did Fail
 **_Code:_**
 
 ```
