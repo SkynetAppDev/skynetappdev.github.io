@@ -5,7 +5,7 @@ How to Integrate LinkedIn Functionality in Lytepole.
 ####Step 1: 
 We need to generate one secret key and one API key for our app to use LinkedIn Libraries and integrate LinkedIn.
 ####Step 2:
-generate API and secret keys, goto the web page, Generate keys of LinkedIn 
+Generate API and secret keys, goto the web page, Generate keys of LinkedIn 
 ####Step 3:
 Login here with your credentials.
 ####Step 4:
