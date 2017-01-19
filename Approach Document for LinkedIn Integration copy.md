@@ -16,22 +16,22 @@ Enter all details of company, names etc.
 Agree the form to submit and it will generate your keys and gives a message like ‘Your application was successfully created’ and gives all keys like following.
 ####Application Details
 
-**_Company:_**:
+**_Company_**:
 SkyNet Research and Development PVT Ltd.
 
-**_Application Name:_**:
+**_Application Name_**:
  Lytepole
 
-**_API Key:_**:
+**_API Key_**:
  78jkhika60207n
 
-**_Secret Key:_**:
+**_Secret Key_**:
  TA6fkc7kCCNPNakU
 
-**_OAuth User Token:_**:
+**_OAuth User Token_**:
 2a261291-8b1b-4624-977a-93b33383c2c9
 
-**_OAuth User Secret:_**:
+**_OAuth User Secret_**:
 b473fb71-1462-436c-a1e4-6e9d919da6ce
 
 Now we have secret and api keys for our application, so we can proceed  to integrate the LinkedIn api in our app.
