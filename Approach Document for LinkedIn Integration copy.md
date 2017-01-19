@@ -138,7 +138,7 @@ We need following urls to login/to post on wall/to post on groups/to fetch group
 * Now we have user groups with us. Show all the groups list with Post on wall option in list view to select where to post the job.<br />
 *  If user selects the ‘Post on wall’ and some groups and save button clicked the job will post on Linked in wall as well as in groups. The following is code flow.<br />
 
-####pragma mark - Posting LinkedIn Wall:
+#### #pragma mark - Posting LinkedIn Wall:
 
 **_Code:_**
 
@@ -233,7 +233,7 @@ NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncod
 
 ```
 
-####pragma mark - Posting LinkedIn Groups:
+#### #pragma mark - Posting LinkedIn Groups:
 **_Code:_**
 
 ```
