@@ -82,10 +82,11 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 * First if we click on ‘LinkedIn’ it will navigates to one page where we can able to see one ‘Login LinkedIn’ with a switch.<br />
 * On selecting that switch we will be navigate to LinkedIn Login web page.<br />
 * On successful login it will give us options of all the groups including ‘Post to wall’ like,<br />
- ○ Post to LinkedIn wall<br />
- ○ Group1<br />
- ○ Group 2<br />
- ○ Group 3 …. etc<br />
+
+     ○	Post to LinkedIn wall<br />       
+     ○	Group 1<br />
+     ○	Group 2<br />
+     ○	Group 3...etc<br />
 * We can select one /many from the list.<br />
 * If we select ‘Post to LinkedIn wall’ and all groups, the job will post on user’s wall as well as on selected groups.<br />
 * We select options and click on done, it will redirect the page to add job page with selected options.<br />
@@ -97,15 +98,222 @@ App Flow to Post Job to LinkedIn Wall/Groups:
 Code Flow of LinkedIn:<br />
 We need following urls to login/to post on wall/to post on groups/to fetch groups,<br />
 
-####//To post the job on wall
+####To post the job on wall.
         LinkedIn Wall Post Url = @"http://api.linkedin.com/v1/people/~/shares";
 	
-####//To Fetch user groups of LinkedIn
+####To Fetch user groups of LinkedIn.
         LinkedIn Groups Url = @"https://api.linkedin.com/v1/people/~/group-memberships:(group:(id,name))?count=100&start=0";
+	
+####To post job on groups of LinkedIn.
+        LinkedIn Groups PosrUrl = @"https://api.linkedin.com/v1/groups/@id@/posts";
+	
+####To post the job with any reference image.
+        LinkedIn Image = @"https://www.lytepole.com/web/prod/images/linkedinimage.png";
+* First to login to linkedIn we are navigating to ‘OAuthLoginView’ controller. It is with in the LinkedIn api. It will redirect to web page to login with our credentials.<br />
+* If successful login following method will call to pick user groups.<br />
 
+**_Code_**
 
+```
+-(void)getLinkedInGroups
+{
+    MNGLang *_MNGLang = [MNGLang sharedGlobals];
+    NSURL *url = [NSURL URLWithString:_MNGLang.linkedInGroupsUrl];
+    
+    OAMutableURLRequest *request =
+    [[OAMutableURLRequest alloc] initWithURL:url
+                                    consumer:oAuthLoginView.consumer
+                                       token:oAuthLoginView.accessToken
+                                    callback:nil
+                           signatureProvider:nil];
+    [request setValue:@"json" forHTTPHeaderField:@"x-li-format"];
+    OADataFetcher *fetcher = [[OADataFetcher alloc] init];
+    [fetcher fetchDataWithRequest:request
+                         delegate:self
+                didFinishSelector:@selector(connectionsGroupsApiCallResult:didFinish:)
+                  didFailSelector:@selector(onnectionsGroupsApiCallResult:didFail:)];
+}
 
+```
+* Now we have user groups with us. Show all the groups list with Post on wall option in list view to select where to post the job.<br />
+*  If user selects the ‘Post on wall’ and some groups and save button clicked the job will post on Linked in wall as well as in groups. The following is code flow.<br />
 
+####pragma mark - Posting LinkedIn Wall
+
+**_Code_**
+
+```
+- (void)buttonPostStatusClick
+{
+    NSString *jobSub = [_LYTDiscussionListParameters getSubject];
+    NSString *jobDesc = [_LYTDiscussionListParameters getDescription];
+    MNGLang *_MNGLang = [MNGLang sharedGlobals];
+    
+    NSURL *linkedInImageUrl = [NSURL URLWithString:_MNGLang.linkedInImage];
+    NSURL *url = [NSURL URLWithString:_MNGLang.linkedInWallPostUrl];
+ OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:url consumer:oAuthLoginView.consumer
+                                                                      token:oAuthLoginView.accessToken
+                                                                   callback:nil
+                                                          signatureProvider:nil];
+
+```
+
+####Creating job post format:
+**_Code_**
+
+```
+NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
+                            
+                            [[NSDictionary alloc]
+                             initWithObjectsAndKeys:
+                             @"anyone",@"code",nil], @"visibility",
+                            
+                            @"Job posted by LytePole App", @"comment",
+                            [[NSDictionary alloc]
+                             initWithObjectsAndKeys:
+                             jobDesc,@"description",
+                             @"https://lytepole.com/",@"submittedUrl",
+                             jobSub,@"title",
+                             @"http://dev.lytepole.com/lytepole/images/linkedinimage.png",@"submittedImageUrl",nil],@"content",
+                            nil];
+    
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSString *updateString = [update JSONString];
+    
+    [request setHTTPBodyWithString:updateString];
+    [request setHTTPMethod:@"POST"];
+    
+    OADataFetcher *fetcher = [[OADataFetcher alloc] init];
+    [fetcher fetchDataWithRequest:request
+                         delegate:self
+                didFinishSelector:@selector(postUpdateApiCallResult:didFinish:)
+                  didFailSelector:@selector(postUpdateApiCallResult:didFail:)];
+}
+
+```
+
+####Delegate of Post on wall did finish
+**_Code_**
+
+```
+- (void)postUpdateApiCallResult:(OAServiceTicket *)ticket didFinish:(NSData *)data
+{
+NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    
+    [MNGLog log:@"post Success response" :resStr];
+    
+    MNGLang *_MNGLang = [MNGLang sharedGlobals];
+
+    if ([resStr rangeOfString:@"update-key>UPDATE"].location != NSNotFound)
+    {
+    if (dontShowAlert == NO && [postNameAry containsObject:@"Post to LinkedIn Wall"] && [postNameAry count]==1)
+        {
+            showWallPostAlert = YES;
+           //  [MNGGlobal alertDisplay:_MNGLang.linkedInjobPostSuccess];
+        }
+    }
+    
+                if ([resStr rangeOfString:@"Do not post duplicate content"].location != NSNotFound)
+    {
+        [MNGGlobal alertDisplay:_MNGLang.linkedInjobPostFail];
+    }
+    [self postToLinkedInGroups:postIdsAry];
+}
+
+```
+####Delegate of Post on wall did Fail
+**_Code_**
+
+```
+- (void)postUpdateApiCallResult:(OAServiceTicket *)ticket didFail:(NSData *)data
+{
+    NSString *resStr = [[NSString alloc]initWithData:data         encoding:NSUTF8StringEncoding];
+    [MNGLog log:@"post Fail response" :resStr];
+}
+
+```
+
+####pragma mark - Posting LinkedIn Groups
+**_Code_**
+
+```
+- (void)postJobOnGroup :(NSString *)groupId
+{
+    NSString *jobSub = [_LYTDiscussionListParameters getSubject];
+    NSString *jobDesc = [_LYTDiscussionListParameters getDescription];
+
+    //8229548
+    MNGLang *_MNGLang = [MNGLang sharedGlobals];
+    NSURL *linkedInImageUrl = [NSURL URLWithString:_MNGLang.linkedInImage];
+
+    NSString *groupPostUrl = _MNGLang.linkedInGroupdPosrUrl;
+    groupPostUrl = [groupPostUrl stringByReplacingOccurrencesOfString:@"@id@"
+                                         withString:groupId];
+    
+    NSURL *url = [NSURL URLWithString:groupPostUrl];
+    OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:url
+                                                                   consumer:oAuthLoginView.consumer
+                                                                      token:oAuthLoginView.accessToken
+                                                                   callback:nil
+                                                          signatureProvider:nil];
+
+```
+
+####Creating Job post format
+**_Code_**
+
+```
+NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
+                            @"Job posted by LytePole App", @"title",
+                            @"", @"summary",
+                            [[NSDictionary alloc]
+                             initWithObjectsAndKeys:
+                             jobDesc,@"description",
+                             @"https://lytepole.com/",@"submittedUrl",
+                             jobSub,@"title",
+                             @"http://dev.lytepole.com/lytepole/images/linkedinimage.png",@"submittedImageUrl",nil],@"content",
+                            nil];
+    
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSString *updateString = [update JSONString];
+    
+    
+    [request setHTTPBodyWithString:updateString];
+    [request setHTTPMethod:@"POST"];
+    
+    OADataFetcher *fetcher = [[OADataFetcher alloc] init];
+    [fetcher fetchDataWithRequest:request
+                         delegate:self
+                didFinishSelector:@selector(postToLinkedInGroupsApiResponse:didFinish:)
+                  didFailSelector:@selector(postToLinkedInGroupsApiResponse:didFail:)];
+}
+
+```
+
+####Delegate of Post in groups did Finish
+**_Code_**
+
+```
+- (void)postToLinkedInGroupsApiResponse:(OAServiceTicket *)ticket didFinish:(NSData *)data
+{
+//    NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+
+}
+	
+```
+
+####Delegate of Post in groups did Fail
+**_Code_**
+
+```
+{
+//    NSString *resStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+```
+
+####Conclusion:
+The job will post on wall as well as on selected groups. Alerts will show according to app flow like in adding job/editing job.
 
 
 
