@@ -17,8 +17,8 @@ For our plugin the following are the files
 
 1. sugar_wordpress.php(Main file)
 2. functions.php(Helper classes)
-<br />  * HTML_Generator(To generate HTML elements) <br />
-        * SW_Plugin_Admin(To control the admin controls)<br />
+<br />  ● HTML_Generator(To generate HTML elements)<br />
+        ● SW_Plugin_Admin(To control the admin controls).<br />
 3. readme.txt(description)
 4. sugar_wordpress.css(CSS file)
 5. sugar_wordpress.js(Javascript file)
