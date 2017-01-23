@@ -1,7 +1,8 @@
+<div style="background:black;"><a>next>></a></div>
 ## Welcome to GitHub Pages
 #### Date: 21-10-2016
 #### Description: This document aims to define the Bluemix Tone Analyzer API coding 
- <div style="background:black;">test</div>
+
 
 #### The Folder Structure is as follows:
    
