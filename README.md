@@ -5,7 +5,7 @@
 
 [Approach Document SMTP Mail configuration in Sugar](Approach Document SMTP Mail configuration in Sugar.README.md)
 <br>
-[Approach Document SMTP Mail configuration in Sugar](Update Approach Document SMTP Mail configuration in Sugar.README.md)
+[Approach Document SMTP Mail configuration in Sugar](Approach Document SMTP Mail configuration in Sugar.README.md)
 <br>
 [Approach Document for Facebook , LinkedIn Integration to Patient App](Approach Document for Facebook , LinkedIn Integration to Patient App.md)
 <br>
