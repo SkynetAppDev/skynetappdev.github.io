@@ -1,4 +1,4 @@
-<div style="background:black;"><a>[NEXT](Approach Document SMTP Mail configuration in Sugar.README.md)</a></div>
+<div style="background:black;">[NEXT](Approach Document SMTP Mail configuration in Sugar.README.md)</div>
 ## Welcome to GitHub Pages
 #### Date: 21-10-2016
 #### Description: This document aims to define the Bluemix Tone Analyzer API coding 
