@@ -13,7 +13,7 @@
 <br>
 [Approach Document for Removing Create-Select Buttons from the Sub Panels](Approach Document for Removing Create-Select Buttons from the Sub Panels.md)
 <br>
-[Approach Document for setting up SSL on EC2](Update Approach Document for setting up SSL on EC2.md)
+[Approach Document for setting up SSL on EC2](Approach Document for setting up SSL on EC2.md)
 
 #### The Folder Structure is as follows:
    
