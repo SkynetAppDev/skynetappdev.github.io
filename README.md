@@ -1,4 +1,4 @@
-<div style="background:black;"><a href="Update Document for creating custom buttons in modules.md">next>></a></div>
+<div style="background:black;"><a>[NEXT](Approach Document SMTP Mail configuration in Sugar.README.md)</a></div>
 ## Welcome to GitHub Pages
 #### Date: 21-10-2016
 #### Description: This document aims to define the Bluemix Tone Analyzer API coding 
