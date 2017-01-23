@@ -3,6 +3,12 @@
 #### Date: 21-10-2016
 #### Description: This document aims to define the Bluemix Tone Analyzer API coding 
 
+[Approach Document SMTP Mail configuration in Sugar](Approach Document SMTP Mail configuration in Sugar.README.md)
+[Approach Document SMTP Mail configuration in Sugar](Update Approach Document SMTP Mail configuration in Sugar.README.md)
+[Approach Document for Facebook , LinkedIn Integration to Patient App](Approach Document for Facebook , LinkedIn Integration to Patient App.md)
+[Approach Document for LinkedIn Integration](Approach Document for LinkedIn Integration copy.md)
+[Approach Document for Removing Create-Select Buttons from the Sub Panels](Approach Document for Removing Create-Select Buttons from the Sub Panels.md)
+[Approach Document for setting up SSL on EC2](Update Approach Document for setting up SSL on EC2.md)
 
 #### The Folder Structure is as follows:
    
