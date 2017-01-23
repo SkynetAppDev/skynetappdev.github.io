@@ -26,7 +26,7 @@ Provide an option to the user for view the attached file in the notes subpanel r
 <br />3.   Create a New file into 
 <br />     Inculde/generic/SugarWidgets/SugarWidgetSubPanelEontekViewField.php
 
-     STEP 1:Put a JavaScript for open the popup window
+####STEP 1:Put a JavaScript for open the popup window
      
    **_Code:_**
 	
@@ -69,7 +69,7 @@ Provide an option to the user for view the attached file in the notes subpanel r
                                               
 ``` 
 
-     STEP 2: Put the following code into the new file
+####STEP 2: Put the following code into the new file
      
 **_Code:_**
 	
