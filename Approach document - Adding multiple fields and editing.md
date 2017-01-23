@@ -135,7 +135,6 @@ custom/modules/<module name>/metadata/editviewdefs.php
                              <table width=\'100%\' border=\'0\' cellspacing=\'0\' cellpadding=\'0\' 
                              id=\'productLine1\'> </table>',
                              
-
 ```
 
 ####Step 5:
