@@ -16,7 +16,7 @@
 <br />3. Click on Ok
 
 ####Login Function.
-●	give the username and password<br />
+●	Give the username and password<br />
 ●	Run the service<br />
 
 ![2 2](https://cloud.githubusercontent.com/assets/17013436/22242275/b7fe446a-e248-11e6-90c7-cad93d348f21.PNG)
