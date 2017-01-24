@@ -67,7 +67,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 **_Code:_**
 
 ```
-Open the file  include->MVC->Controller->entry_point_registry.php
+open the file  include->MVC->Controller->entry_point_registry.php
               Into the “$entry_point_registry” array add this subarray
               'viewpdfdoc' => array('file' => 'pdfprint.php', 'auth' => true)
               
