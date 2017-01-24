@@ -111,4 +111,5 @@ In this file I am doing the following operations
 ```
 
 * Now at last put this code to print the pdf file content
+
                      $pdf->Output();
