@@ -28,7 +28,11 @@ Login to Godadday
 ####Note:
 Even though if instance assigned elastic IP We need to assign the same Elastic IP again when restarting instance.
 
+
+
 ![document pic 1](https://cloud.githubusercontent.com/assets/25039079/22244685/911b84a2-e252-11e6-895f-aea03257fc1c.png)
+
+
 
 
 
@@ -36,7 +40,11 @@ Even though if instance assigned elastic IP We need to assign the same Elastic I
 
 
 
+
+
 ![document pic 3](https://cloud.githubusercontent.com/assets/25039079/22245070/229b9a88-e254-11e6-8314-3ad237f725d2.png)
+
+
 
 
 
@@ -44,11 +52,17 @@ Even though if instance assigned elastic IP We need to assign the same Elastic I
 
 
 
+
+
 ![document pic 5](https://cloud.githubusercontent.com/assets/25039079/22245221/e86a531c-e254-11e6-9fb7-49863db717f1.png)
 
 
 
+
+
 ![document pic 6](https://cloud.githubusercontent.com/assets/25039079/22245252/0810deb6-e255-11e6-8965-1416f06ec182.png)
+
+
 
 
 
