@@ -104,9 +104,6 @@ In this file I am doing the following operations
                    content
                    $pdf->LN(); //for changing the line
                    $pdf->LN();
-
-                 …....................
-
                    
 ```
 
