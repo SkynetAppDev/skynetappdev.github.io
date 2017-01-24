@@ -30,7 +30,7 @@ Even though if instance assigned elastic IP We need to assign the same Elastic I
 
 
 
-![document pic 1](https://cloud.githubusercontent.com/assets/25039079/22244685/911b84a2-e252-11e6-895f-aea03257fc1c.png)
+![document pic 1](https://cloud.githubusercontent.com/assets/25039079/22248224/9d242f4a-e263-11e6-88da-b795943ec4e9.png)
 
 
 
