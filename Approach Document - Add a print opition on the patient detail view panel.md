@@ -5,7 +5,7 @@ Provide a option to the user for print the patient complete information.
 ####Procedure:
 
 ####STEP 1: 
-open the file  module->mango_Patients->metadata->detailviewdefs.php Into the field array add this subarray
+Open the file  module->mango_Patients->metadata->detailviewdefs.php Into the field array add this subarray
 
 **_Code:_**
 
@@ -67,7 +67,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 **_Code:_**
 
 ```
-open the file  include->MVC->Controller->entry_point_registry.php
+Open the file  include->MVC->Controller->entry_point_registry.php
               Into the “$entry_point_registry” array add this subarray
               'viewpdfdoc' => array('file' => 'pdfprint.php', 'auth' => true)
               
@@ -83,15 +83,15 @@ Extract the downloaded FPDF ZIP file and save all the file and document into the
 
 Create file pdfprint.php  to generate the pdf file print for the paitent complete information.
 In this file I am doing the following operations 
-* first get the id from the requested URL
+* First get the id from the requested URL
              $id=$_REQUEST['id'];
-* include the following file into this file
+* Include the following file into this file
                   require("fpdf.php");
               and also add this to into the file
                  global $sugar_config;            
 
 * After that fetch the record from the database using the $id from the tables (mango_paitents, max_page1, max_page2, max_page3, notes, max_Epescreption1, mango_Medication)<br />
-* storing the records into the array.<br />
+* Storing the records into the array.<br />
 * Now create the pdf<br />
 
 **_Code:_**
