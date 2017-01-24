@@ -12,7 +12,7 @@ eFax is a company that let's you send and receive faxes via the Internet. The fa
 * Then will need to set of functions to our specific needs.<br />
 * Those functions are like set_account_id(“ ”),set_user_name(“ ”),set_user_password(“ ”),
      add_file,add_recipient<br />
-* Then will use set_outbound_url("https://secure.efaxdeveloper.com/EFax_WebFax.serv");this url need not to modify.<br />
+* Then will use set_outbound_url("https://secure.efaxdeveloper.com/EFax_WebFax.serv"); this url need not to modify.<br />
 * In the similar way we write several functions basis upon our requirements.<br />
 * Finally use send function for sending fax
 
