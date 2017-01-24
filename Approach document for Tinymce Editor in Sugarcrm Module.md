@@ -2,7 +2,7 @@
 Tinymce editor for textarea field in sugarcrm modules.
 
 ####Overview
-Tinymce Editor Provides advanced compose functionality like (font style,font size,bold,italic etc.;), In write the text
+Tinymce Editor Provides advanced compose functionality like (font style,font size,bold,italic etc.;) In write the text
 in textarea type.
 
 ####How To Show tinymce editor for textarea type in sugarcrm modules:
