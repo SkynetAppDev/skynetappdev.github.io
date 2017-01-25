@@ -9,7 +9,7 @@ Installing ftp server on Linux(Ubuntu)
 5.Then edit/change following lines like below
 
               local_enable=YES
-                  write_enable=YES<br />
+                  write_enable=YES
                   
 6.Now restart vsftpd<br />
 
@@ -20,11 +20,11 @@ Installing ftp server on Linux(Ubuntu)
 1.There are options in /etc/vsftpd.conf to help make vsftpd more secure. For example  
       users can be limited to their home directories by uncommenting
       
-      chroot_local_user=YES<br />
+      chroot_local_user=YES
       
 2.Limit a specific list of users to just their home directories.
 
-      chroot_list_enable=YES<br />
+      chroot_list_enable=YES
       chroot_list_file=/etc/vsftpd.chroot_list
       
 ####SSL Configuration:
@@ -33,7 +33,7 @@ Installing ftp server on Linux(Ubuntu)
      
        ssl_enable=Yes
 
-2.Notice the certificate and key related options.
+2.Notice the certificate and key related options.<br />
 Example
 
         rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
