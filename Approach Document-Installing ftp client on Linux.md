@@ -28,7 +28,7 @@ Installing ftp server on Linux(Ubuntu)
   
 ####Securing FTP:
 
-1. There are options in /etc/vsftpd.conf to help make vsftpd more secure. For example  
+1.There are options in /etc/vsftpd.conf to help make vsftpd more secure. For example  
       users can be limited to their home directories by uncommenting
       
 **_Code:_**
