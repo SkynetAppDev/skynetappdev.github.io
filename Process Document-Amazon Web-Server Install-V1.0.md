@@ -2,7 +2,7 @@ Launching new webserver using existing 'Base Web-Server'.
 ####Description:
 Following steps invloved to create Web-Server instance using existing AMI( ami-1fc4af76 ).
 
-1.Choose an AMI<br />
+1. Choose an AMI<br />
 2. Instance details<br />
 3. Create key pair<br />
 4. Configure firewall<br />
