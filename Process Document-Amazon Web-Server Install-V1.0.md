@@ -14,19 +14,18 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 ####Step 1: Choose an AMI
 
 * Click on launch instance.
-
-
-  ![pic 1 1](https://cloud.githubusercontent.com/assets/25039079/22278959/5758c28e-e2ed-11e6-9cd8-2a605b31cf1b.png)
-
+![pic 1 1](https://cloud.githubusercontent.com/assets/25039079/22278959/5758c28e-e2ed-11e6-9cd8-2a605b31cf1b.png)
 * Click on my AMIs
 * Select BaseWeb-Server(ami-1tc4af76)
+* Select BaseWeb-Server(ami-1tc4af76)
+
 ![pic 2](https://cloud.githubusercontent.com/assets/25039079/22279032/0575afc6-e2ee-11e6-869b-4e47342be9e9.png)
 
 ####Step2 : Instance details
-
 * Select instance type based on server requirements.
 * Here I'm selecting M1 Medium with 2 ECUs,1 CPU Core with 3.7 GiB.
 * Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.
+* Use default options and click on continue.
 * Use default options and click on continue.
 
 
