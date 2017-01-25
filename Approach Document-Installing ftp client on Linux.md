@@ -22,7 +22,7 @@ Installing ftp server on Linux(Ubuntu)
 
 ```
 
-            sudo /etc/init.d/vsftpd restart
+              sudo /etc/init.d/vsftpd restart
             
   ```
   
@@ -35,7 +35,7 @@ Installing ftp server on Linux(Ubuntu)
 
 ```
 
-chroot_local_user=YES
+             chroot_local_user=YES
    
  ```
  
@@ -44,8 +44,8 @@ chroot_local_user=YES
 **_Code:_**
 
 ```
-      chroot_list_enable=YES
-      chroot_list_file=/etc/vsftpd.chroot_list
+            chroot_list_enable=YES
+            chroot_list_file=/etc/vsftpd.chroot_list
       
  ```
       
@@ -56,7 +56,7 @@ chroot_local_user=YES
 **_Code:_**
 
  ```    
-       ssl_enable=Yes
+             ssl_enable=Yes
        
  ```
  
@@ -67,7 +67,7 @@ chroot_local_user=YES
 
  ```
 
-        rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
-        rsa_private_key_file=/etc/ssl/private/ssl-cert- snakeoil.key
+             rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
+             rsa_private_key_file=/etc/ssl/private/ssl-cert- snakeoil.key
    
  ```
