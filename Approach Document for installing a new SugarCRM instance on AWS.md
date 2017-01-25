@@ -1,5 +1,5 @@
 ####Description:
-Approach Document for installing a new SugarCRM instance on AWS
+Approach Document for installing a new SugarCRM instance on AWS.
 ####Below is the Step wise Process Flow of :
 ####Steps for Connecting to AWS:
 The following screen is the start up screen for putty where we need to give the host url to connect to:
