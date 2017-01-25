@@ -33,7 +33,8 @@ Installing ftp server on Linux(Ubuntu)
      
        ssl_enable=Yes
 
-2.Notice the certificate and key related options.Example
+2.Notice the certificate and key related options.
+Example
 
         rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
         rsa_private_key_file=/etc/ssl/private/ssl-cert- snakeoil.key
