@@ -28,11 +28,11 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.
 * Use default options and click on continue.
 
-![pic 3 1](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
+![pic 3](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
  
-![pic 4 2](https://cloud.githubusercontent.com/assets/25039079/22279630/d1b19df4-e2f1-11e6-8dbd-db15d0953e7f.png)
+![pic 4](https://cloud.githubusercontent.com/assets/25039079/22279630/d1b19df4-e2f1-11e6-8dbd-db15d0953e7f.png)
     
-![pic 5 2](https://cloud.githubusercontent.com/assets/25039079/22279709/5cb87ff8-e2f2-11e6-87c1-d7ed4473e5d8.png)
+![pic 5](https://cloud.githubusercontent.com/assets/25039079/22279709/5cb87ff8-e2f2-11e6-87c1-d7ed4473e5d8.png)
 
 ####Step3 : Create key pair
 
@@ -40,7 +40,7 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Download keypair.<br />
 * Click on 'continue'.Please the below images.<br />
 
-![pic 6 2](https://cloud.githubusercontent.com/assets/25039079/22280069/87e32d3e-e2f4-11e6-94ec-51fcd5387047.png)
+![pic 6](https://cloud.githubusercontent.com/assets/25039079/22280069/87e32d3e-e2f4-11e6-94ec-51fcd5387047.png)
 
 ####Step4 : Configure FireWall Settings
 
