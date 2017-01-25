@@ -25,7 +25,7 @@
 ####Steps for creating a label name for a custom field manually:
 *	Whenever we display this custom field (userfriendly_meeting_id in this case) , it should be visible with a label name, this label name can be set at <root>/custom/modules/<your_module>/language/en_us.lang.php
 *	Adding an array element under $mod_strings array in en_us.lang.php file will give it a label name.
-*	our custom field is userfriendly_meeting_id created in meetings module, so file that needs to be modified is at <root>/custom/modules/<meetings>/language/en_us.lang.php
+*	Our custom field is userfriendly_meeting_id created in meetings module, so file that needs to be modified is at <root>/custom/modules/<meetings>/language/en_us.lang.php
 *	'LBL_FRIENDLY_ID' => 'Friendly Id', is array element that should be added in $mod_strings array in en_us.lang.php file of meetings module.
 
 ####Steps for displaying a custom field in detail view:
