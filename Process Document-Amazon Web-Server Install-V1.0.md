@@ -29,11 +29,11 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.
 * Use default options and click on continue.
 
-![pic 3](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
+![g3](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
  
-![pic 4](https://cloud.githubusercontent.com/assets/25039079/22279630/d1b19df4-e2f1-11e6-8dbd-db15d0953e7f.png)
+![g4](https://cloud.githubusercontent.com/assets/25039079/22279630/d1b19df4-e2f1-11e6-8dbd-db15d0953e7f.png)
     
-![pic 5](https://cloud.githubusercontent.com/assets/25039079/22279709/5cb87ff8-e2f2-11e6-87c1-d7ed4473e5d8.png)
+![g5](https://cloud.githubusercontent.com/assets/25039079/22279709/5cb87ff8-e2f2-11e6-87c1-d7ed4473e5d8.png)
 
 ####Step3 : Create key pair
 
@@ -41,7 +41,7 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Download keypair.<br />
 * Click on 'continue'.Please the below images.<br />
 
-![pic 6](https://cloud.githubusercontent.com/assets/25039079/22280069/87e32d3e-e2f4-11e6-94ec-51fcd5387047.png)
+![g6](https://cloud.githubusercontent.com/assets/25039079/22280069/87e32d3e-e2f4-11e6-94ec-51fcd5387047.png)
 
 ####Step4 : Configure FireWall Settings
 
@@ -50,7 +50,7 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Set inbound rules.
 * Click on continue button.
 
-![pic 7](https://cloud.githubusercontent.com/assets/25039079/22280149/fa32c41c-e2f4-11e6-8cc5-bf9be3cd7e2f.png)
+![g7](https://cloud.githubusercontent.com/assets/25039079/22280149/fa32c41c-e2f4-11e6-8cc5-bf9be3cd7e2f.png)
 
 ####Step5 : Review
 
@@ -59,7 +59,7 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * If everthing fine Click on Luanch button.It will launch new instance.
 * Check the status in dashboard.
 
-![pic 8](https://cloud.githubusercontent.com/assets/25039079/22280200/4f4d0bce-e2f5-11e6-9952-00e90b2c7a0b.png)
+![g8](https://cloud.githubusercontent.com/assets/25039079/22280200/4f4d0bce-e2f5-11e6-9952-00e90b2c7a0b.png)
 
 
   
