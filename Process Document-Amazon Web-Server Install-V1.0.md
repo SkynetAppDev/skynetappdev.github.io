@@ -11,7 +11,7 @@ Following steps invloved to create Web-Server instance using existing AMI( ami-1
 ####Procedure:
 Lunching new instance using 'Base Web-Server Reference' instance.
 
-####Step 1:Choose an AMI
+####Step 1: Choose an AMI
 
 * Click on launch instance.
 
