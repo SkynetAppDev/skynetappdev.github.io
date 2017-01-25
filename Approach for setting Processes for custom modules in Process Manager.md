@@ -29,8 +29,8 @@ $GLOBALS['app_list_strings']['process_object']=array (
 ####Step 4:
  For each Process Stage we have to define Process Stage Tasks i.e. send email/call/create task/run custom script.
  
- 1.For Sending Emails we have to select one of the Email Templates.<br />
- 2.For running a custom script using PM, we have to follow these steps:  
+ 1. For Sending Emails we have to select one of the Email Templates.<br />
+ 2. For running a custom script using PM, we have to follow these steps:  
   * Filename and the class name in the file should be same.
   * Class defined in the file should have a constructor .
   * The file should be placed in the customScript folder in modules/PM_ProcessManager. 
