@@ -33,8 +33,9 @@ Installing ftp server on Linux(Ubuntu)
       
 **_Code:_**
 
-```    
-      chroot_local_user=YES
+```
+
+chroot_local_user=YES
    
  ```
  
@@ -68,5 +69,5 @@ Installing ftp server on Linux(Ubuntu)
 
         rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
         rsa_private_key_file=/etc/ssl/private/ssl-cert- snakeoil.key
-        
-        ```
+   
+ ```
