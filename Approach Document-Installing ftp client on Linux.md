@@ -27,7 +27,7 @@ Installing ftp server on Linux(Ubuntu)
       chroot_list_enable=YES<br />
       chroot_list_file=/etc/vsftpd.chroot_list
       
- ####SSL Configuration:
+####SSL Configuration:
  
 1.To configure FTPS, edit /etc/vsftpd.conf and at the bottom add
      
