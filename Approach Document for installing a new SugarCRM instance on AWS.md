@@ -4,7 +4,7 @@ Approach Document for installing a new SugarCRM instance on AWS
 ####Steps for Connecting to AWS:
 The following screen is the start up screen for putty where we need to give the host url to connect to:
 
-![sugar](https://cloud.githubusercontent.com/assets/25039079/22282164/c76bde36-e300-11e6-8465-6f15f9028e3c.png)
+![g](https://cloud.githubusercontent.com/assets/17013436/22283856/60e1093e-e30a-11e6-991d-a6b783347b6e.PNG)
 
 After entering the url, in the category panel under connection subsection, we need click on SSH option to upload the authentication ppk 
 file as shown in the below screen and click open that opens the putty window.
