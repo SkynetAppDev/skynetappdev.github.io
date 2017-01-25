@@ -19,7 +19,6 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Click on my AMIs
 * Select BaseWeb-Server(ami-1tc4af76).
 
-
 ![pic 2](https://cloud.githubusercontent.com/assets/25039079/22279032/0575afc6-e2ee-11e6-869b-4e47342be9e9.png)
 
 ####Step2 : Instance details
