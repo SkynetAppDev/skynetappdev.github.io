@@ -14,9 +14,9 @@ Installing ftp server on Linux(Ubuntu)
               local_enable=YES
                   write_enable=YES
                   
- ```               
+```               
                   
-6. Now restart vsftpd
+6.Now restart vsftpd
 
 **_Code:_**
 
@@ -39,7 +39,7 @@ Installing ftp server on Linux(Ubuntu)
    
  ```
  
-2. Limit a specific list of users to just their home directories.
+2.Limit a specific list of users to just their home directories.
 
 **_Code:_**
 
@@ -59,7 +59,7 @@ Installing ftp server on Linux(Ubuntu)
              ssl_enable=Yes
        
  ```
-2. Notice the certificate and key related options.<br />
+2.Notice the certificate and key related options.<br />
 
 **_Example_** **_Code:_**
 
