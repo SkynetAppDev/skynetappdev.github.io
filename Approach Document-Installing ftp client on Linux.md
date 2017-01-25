@@ -6,10 +6,15 @@ Installing ftp server on Linux(Ubuntu)
 2.Sudo apt-get install vsftpd.<br />
 3.To configure vsftpd to authenticate system users and allow them to upload files edit /etc/vsftpd.conf:<br />
 4.Sudo vi /etc/vsftpd.conf <br />
-5.Then edit/change following lines like below
+5.Then edit/change following lines like below.
 
+**_Code:_**
+
+```
               local_enable=YES
                   write_enable=YES
+                  
+ ```               
                   
 6.Now restart vsftpd<br />
 
