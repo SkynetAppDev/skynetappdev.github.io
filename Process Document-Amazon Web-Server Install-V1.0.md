@@ -24,18 +24,15 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 
 ####Step2 : Instance details
 
-* Select instance type based on server requirements.<br />
-* Here I'm selecting M1 Medium with 2 ECUs,1 CPU Core with 3.7 GiB.<br />
-* Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.<br />
-* Use default options and click on continue.<br />
+* Select instance type based on server requirements.
+* Here I'm selecting M1 Medium with 2 ECUs,1 CPU Core with 3.7 GiB.
+* Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.
+* Use default options and click on continue.
 
  ![pic 3 1](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
  
-
-
  ![pic 4 2](https://cloud.githubusercontent.com/assets/25039079/22279630/d1b19df4-e2f1-11e6-8dbd-db15d0953e7f.png)
     
- 
  ![pic 5 2](https://cloud.githubusercontent.com/assets/25039079/22279709/5cb87ff8-e2f2-11e6-87c1-d7ed4473e5d8.png)
 
 ####Step3 : Create key pair
