@@ -29,11 +29,11 @@ Installing ftp server on Linux(Ubuntu)
       
  ####SSL Configuration:
  
- 1.To configure FTPS, edit /etc/vsftpd.conf and at the bottom add
+1.To configure FTPS, edit /etc/vsftpd.conf and at the bottom add
      
        ssl_enable=Yes
 
-2. Notice the certificate and key related options.Example
+2.Notice the certificate and key related options.Example
 
         rsa_cert_file=/etc/ssl/certs/ssl-cert- snakeoil.pem
         rsa_private_key_file=/etc/ssl/private/ssl-cert- snakeoil.key
