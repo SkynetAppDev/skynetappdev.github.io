@@ -13,16 +13,16 @@ file as shown in the below screen and click open that opens the putty window.
 
 Below screen is the putty start screen where we need to login by giving the user name which is ‘ubuntu’ and press enter.
 
-![sugar 2](https://cloud.githubusercontent.com/assets/25039079/22282284/71a1c62c-e301-11e6-9f60-027aa35d0e94.png)
+![g3](https://cloud.githubusercontent.com/assets/17013436/22283981/08eb7f88-e30b-11e6-8d45-cf2e2a75e17d.PNG)
 
 ####Steps for create new database for the instance:
 
-![sugar 3](https://cloud.githubusercontent.com/assets/25039079/22282353/cab474ee-e301-11e6-930b-2933f06fc0d8.png)
+![g4](https://cloud.githubusercontent.com/assets/17013436/22284023/45ed7148-e30b-11e6-95f4-01255b26d87b.PNG)
 
 * Create a database using create command “Create database <database name>”. as shown in above.<br />
 * Now import the data into database as shown in the below picture.
 
-![sugar 4](https://cloud.githubusercontent.com/assets/25039079/22282410/1c9c6140-e302-11e6-98b2-8f42458bb265.png)
+![g5](https://cloud.githubusercontent.com/assets/17013436/22284057/6f60a7f2-e30b-11e6-8724-21ad2171957e.PNG)
 
 * After importing data is finished, we have a database ready to be used by a sugar instance.
 
