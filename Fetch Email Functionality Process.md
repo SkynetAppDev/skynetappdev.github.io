@@ -34,7 +34,7 @@ The **fetch_emails WS** functionality as follows.
         1. All TO-address email is meeting external invitees.<br />
         2. If TO address email is existing user ,ALL TO Address email accounts are come under member-accounts of Fromaddress (Meeting-owner) Account.<br />
         3. If TO addresses email is non-existing user and create new user ,All TO Address email accounts are come under member-accounts of Fromaddress (Meeting-owner) Account.<br />
-* **CC Address Looping**     
+* **CC Address Looping**<br />  
         1. All CC addresses email is meeting external invitees.<br />
         2. If CC addresses email is existing user ,ALL CC Address email accounts are come under member-accounts of Fromaddress (Meeting-owner) Account.<br />
         3. If CC addresses email is non-existing user and create new user ,All CC Address email accounts are come under member-accounts of Fromaddress (Meeting-owner) Account.<br />
