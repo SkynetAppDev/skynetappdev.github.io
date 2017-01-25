@@ -59,11 +59,9 @@ Installing ftp server on Linux(Ubuntu)
              ssl_enable=Yes
        
  ```
- 
 2. Notice the certificate and key related options.<br />
-**_Example_**
 
-**_Code:_**
+**_Example_** **_Code:_**
 
  ```
 
