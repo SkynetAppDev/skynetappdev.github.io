@@ -33,7 +33,6 @@ Below screen is the putty start screen where we need to login by giving the user
 **_Code:_**
 	
 ```
-
              sudo svn export <SVN url> <directory structure>  
              
 ```           
