@@ -27,8 +27,8 @@ Lunching new instance using 'Base Web-Server Reference' instance.
 * Select instance type based on server requirements.
 * Here I'm selecting M1 Medium with 2 ECUs,1 CPU Core with 3.7 GiB.
 * Click on 'Continue' button then it will redirect to 'Advanced Instance Options'.
-*
 * Use default options and click on continue.
+
 
  ![pic 3 1](https://cloud.githubusercontent.com/assets/25039079/22279231/6136faee-e2ef-11e6-8aa5-bd7397fb3e6e.png)
  
