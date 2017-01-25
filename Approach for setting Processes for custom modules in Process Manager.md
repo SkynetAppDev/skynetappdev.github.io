@@ -34,5 +34,9 @@ $GLOBALS['app_list_strings']['process_object']=array (
   * Filename and the class name in the file should be same.
   * Class defined in the file should have a constructor .
   * The file should be placed in the customScript folder in modules/PM_ProcessManager. 
+  
+####Note:
+1 . Version of PM being Used : 6.2 CE
+  
 
 
