@@ -20,7 +20,7 @@ $GLOBALS['app_list_strings']['process_object']=array (
  Browse to Process Manager module and click on Create Process. The fields available are:
  * Process Name
  * Process Status
- * Process Object -  select the module for which the process is being created.
+ * Process object -  select the module for which the process is being created.
  * Start Event  - Run the process when a record is created/modified 
  
 ####Step 3:
