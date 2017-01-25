@@ -30,7 +30,13 @@ Below screen is the putty start screen where we need to login by giving the user
 
 * Using export command you can take an export of  the required instance from SVN to your required directory in the AWS.
 
+**_Code:_**
+	
+```
+
              sudo svn export <SVN url> <directory structure>  
+             
+```           
              
 * After authentication details entered, code is exported from  SVN to your AWS required directory structure.
 * Now using FTP open the instance’s config.php file and give the appropriate site_url and db values (db name, pwd) and save this file back on AWS.
