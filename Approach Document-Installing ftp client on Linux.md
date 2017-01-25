@@ -2,11 +2,11 @@
 Installing ftp server on Linux(Ubuntu)
 
 ####Installing ftp
-1.Use following commands to install ftp client.<br />
-2.Sudo apt-get install vsftpd.<br />
-3.To configure vsftpd to authenticate system users and allow them to upload files edit /etc/vsftpd.conf:<br />
-4.Sudo vi /etc/vsftpd.conf <br />
-5.Then edit/change following lines like below.
+1. Use following commands to install ftp client.<br />
+2. Sudo apt-get install vsftpd.<br />
+3. To configure vsftpd to authenticate system users and allow them to upload files edit /etc/vsftpd.conf:<br />
+4. Sudo vi /etc/vsftpd.conf <br />
+5. Then edit/change following lines like below.
 
 **_Code:_**
 
@@ -59,7 +59,7 @@ Installing ftp server on Linux(Ubuntu)
        
  ```
  
-2.Notice the certificate and key related options.<br />
+2. Notice the certificate and key related options.<br />
 **_Example_**
 
 **_Code:_**
