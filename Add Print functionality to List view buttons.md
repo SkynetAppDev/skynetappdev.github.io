@@ -20,7 +20,7 @@ return $script;
 
 ```
 
-<br />4. Add a javascript function to the end of the document
+<br />4. Add a javascript function to the end of the document.
 
 **_Code:_**
 
