@@ -3,7 +3,7 @@ To add Print functionality to a List View button.
 ####Steps:
 1. Add Print button to the List View as previously mentioned in other document
 2. Go to <sugar_root>/include/ListView/ListViewDisplay.php
-3. Locate the function buildPrintLink()
+3. Locate the function buildPrintLink()<br />
 
 **_Code:_**
 
@@ -20,7 +20,7 @@ return $script;
 
 ```
 
-4.Add a javascript function to the end of the document
+4. Add a javascript function to the end of the document
 
 **_Code:_**
 
