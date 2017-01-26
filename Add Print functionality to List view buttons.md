@@ -40,7 +40,7 @@ window.open(string);
 ```
 ####Observation:
 1.The functionality of the buttons on List Views can be altered by changing the
-appropriate functions in include/ListView/ListViewDisplay.php.<br />
+ <br /> appropriate functions in include/ListView/ListViewDisplay.php.<br />
 2.There is no need to 'Repair' the Sugar database again. Just need to refresh the
 pages to reflect the changes.<br />
 3.Here we are adding/altering a core document in Sugar. So, not sure if it is upgrade
