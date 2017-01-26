@@ -36,7 +36,6 @@ There are two parts to integrate LinkedIn in our app<br />
 
 **●	OAuth User Secret:<br />**
 b473fb71-1462-436c-a1e4-6e9d919da6ce<br />
-
 Now we have secret and API keys for our application, so we can proceed to integrate the LinkedIn API in our app.
 
 **2. Integrate LinkedIn API in our app with the above generated keys:**
