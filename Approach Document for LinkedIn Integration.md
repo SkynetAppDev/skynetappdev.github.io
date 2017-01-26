@@ -21,16 +21,22 @@ There are two parts to integrate LinkedIn in our app<br />
 ####Application Details
 **●	Company:<br />**
             SkyNet Research and Development PVT Ltd.<br />
+            
 **●	Application Name:<br />**
             Lytepole<br />
+            
 **●	API Key:<br />**
             78jkhika60207n<br />
+            
 **●	Secret Key:<br />**
              TA6fkc7kCCNPNakU<br />
+             
 **●	OAuth User Token:<br />**
 2a261291-8b1b-4624-977a-93b33383c2c9<br />
+
 **●	OAuth User Secret:<br />**
 b473fb71-1462-436c-a1e4-6e9d919da6ce<br />
+
 Now we have secret and API keys for our application, so we can proceed to integrate the LinkedIn API in our app.
 
 **2. Integrate LinkedIn API in our app with the above generated keys:**
