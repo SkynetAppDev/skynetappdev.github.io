@@ -45,7 +45,7 @@ appropriate functions in include/ListView/ListViewDisplay.php.<br />
 pages to reflect the changes.<br />
 3.Here we are adding/altering a core document in Sugar. So, not sure if it is upgrade
 safe.<br />
-4.For now, it only prints one record at a time.
+4.For now, It only prints one record at a time.
 
 
 
